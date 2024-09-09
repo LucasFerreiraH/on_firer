@@ -1,27 +1,38 @@
+
+
 # On Firer
 
-Bem-vindo a **On Firer**! 🎉
+On Firer é uma loja de roupas cristãs com um modelo de e-commerce. Este projeto é uma aplicação web que apresenta duas coleções lançadas pela marca: uma blusa de frio e uma camiseta. O objetivo é permitir que os usuários pesquisem e visualizem as coleções disponíveis, acessando mais informações através de links diretos para as páginas dos produtos e redes sociais.
 
-## O que é a On Firer?
+## Funcionalidades
 
-O **On Firer** é uma aplicação web simples e elegante que ajuda você a encontrar informações da marca com facilidade. Se você já se sentiu perdido em meio a um mar de dados e não sabe por onde começar, esse é o seu novo melhor amigo!
+- **Exibição de Produtos**: A página inicial carrega todos os produtos disponíveis para visualização.
+- **Pesquisa de Produtos**: Usuários podem pesquisar por palavras-chave relacionadas aos produtos. A pesquisa é realizada por título, descrição e tags dos produtos.
+- **Links para Mais Informações**: Cada item exibido possui links para a página do produto e para o Instagram da marca, oferecendo acesso direto a mais detalhes e informações.
 
-## Como Funciona?
+## Tecnologias Utilizadas
 
-1. **Pesquisar**: Use a caixa de pesquisa para digitar o que você está procurando. Pode ser um nome, uma descrição ou até mesmo uma tag! 🕵️‍♂️
-2. **Ver Resultados**: Clique no botão "Pesquisar" e veja o que aparece. Se houver correspondências, elas serão exibidas logo abaixo. Caso contrário, não se preocupe, a aplicação te avisa de maneira amigável. 😉
+### HTML
 
-## O que a Aplicação Faz?
+- **Estrutura da Página**: Define a estrutura básica da página, incluindo cabeçalho, seção principal com campo de pesquisa e botão, e a seção de resultados da pesquisa.
+- **Elementos de Navegação**: Inclui um formulário de pesquisa e um layout para exibir os produtos encontrados.
 
-- **Recebe Input**: Você digita o que quer procurar na caixa de pesquisa.
-- **Pesquisa nos Dados**: A aplicação procura nas informações disponíveis e encontra o que corresponde ao seu input.
-- **Mostra Resultados**: Exibe os resultados da pesquisa de forma clara e organizada. Você verá o título, uma breve descrição e links úteis para mais detalhes.
+### CSS
+
+- **Estilização Visual**: Define a aparência da página, incluindo fontes, cores, e layout responsivo.
+- **Layout e Design**: Utiliza Flexbox para layout e media queries para garantir que a página seja responsiva em diferentes tamanhos de tela.
+- **Temas e Cores**: Aplica um tema visual coeso que combina uma imagem de fundo com gradientes e estilizações específicas para botões e caixas de resultado.
+
+### JavaScript
+
+- **Função `exibirTodosOsDados()`**: Exibe todos os dados de produtos na página inicial.
+- **Função `pesquisar()`**: Permite aos usuários buscar produtos por palavras-chave, filtrando os resultados com base em título, descrição e tags.
+- **Manipulação do DOM**: Atualiza dinamicamente a página com os resultados da pesquisa ou todos os dados quando a página é carregada.
 
 ## Estrutura do Projeto
 
-- **`index.html`**: O arquivo HTML principal que define a estrutura da nossa aplicação.
-- **`style.css`**: Onde o estilo e o design da nossa aplicação são definidos. Sinta-se à vontade para personalizar e deixar com a sua cara!
-- **`dados.js`**: Contém os dados que serão pesquisados. É aqui que você coloca as informações que a aplicação vai procurar.
-- **`app.js`**: O cérebro da aplicação! Aqui está o código JavaScript que faz a mágica acontecer. Ele controla a pesquisa e atualiza a página com os resultados.
-
+- **index.html**: Contém a estrutura HTML da aplicação.
+- **style.css**: Arquivo de estilos CSS que define a aparência e o layout da página.
+- **app.js**: Contém o código JavaScript responsável pela lógica de exibição e pesquisa dos produtos.
+- **dados.js**: Contém os dados dos produtos (títulos, descrições, links e tags).
 
